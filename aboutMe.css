@@ -1,0 +1,99 @@
+/* text font and background color of page*/
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #ea4c89;
+}
+
+/* button styling*/
+button {
+    background-color: white;
+    cursor: pointer;
+    color: black; 
+    border: none; 
+    padding: 10px 15px; 
+    border-radius: 5px;
+    transition: transform 0.3s; 
+    transition: color 0.3s;
+}
+
+button:hover {
+    color: #ea4c89;
+    transition: 0.3s;
+    transform: scale(1.05);
+}
+
+.active button {
+    color: #ea4c89;
+
+}
+
+/* navigation menu styling and format*/
+.navigate {
+    text-align: right;
+    background-color: white;
+    border-radius: 5px;
+    margin-bottom: 20px;
+}
+
+/* container format and styling*/
+.container {
+    width: 70%; 
+    max-width: 1200px; 
+    min-height: 400px; 
+    padding: 20px; 
+    margin: 20px auto; 
+    background-color: white; 
+    border-radius: 5px;
+    box-sizing: border-box;
+   
+}
+
+/* content class set to flex*/
+.content {
+    display: flex;
+    align-items: flex-start;
+}
+/* image styling*/
+.container img {
+    width: 30%;
+    height: auto;
+    margin-right: 20px;
+}
+
+/* text class format*/
+.text {
+    display: flex;
+    flex-direction: column;
+}
+
+/* text inside contianer class formatting*/
+.container h1, h3, p {
+    margin: 0;
+    padding: 5px 0;
+    text-align: left;
+}
+.container h3 {
+    color: #ea4c89;
+}
+
+footer {
+    color: white;
+    position: relative;
+    bottom: 0;
+    margin-top: 60px;
+}
+
+/* page layout changes according to screen size*/
+@media (max-width: 600px) {
+    .navigate {
+        text-align: center; 
+    }
+
+    .contact {
+        width: 90%; 
+    }
+}
+
+
+
+

@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="hobbies.css">
+    <script src="hobbies.js"></script>
+    <title>Hobbies</title>
+</head>
+<body>
+    <div class = "container">
+        <!--navigation menu for navigating website using buttons and links. included on all html files-->
+        <div class = "navigate">
+            <a href="index.html"><button>Home</button></a>
+            <a href="aboutMe.html"><button>About Me</button></a>
+            <a href="contactMe.html"><button>Contact Me</button></a>
+            <a href="hobbies.html" class="active"><button>Hobbies</button></a>
+        </div>
+        <h1>My Hobbies</h1>
+        <!--contains all my hobbies-->
+        <div class="hobbies">
+            <!--contains each individual hobby, descrition, and img-->
+            <div class="hobbyContainer">
+                <img src="images/basketball.png" alt="basketball">
+                <h3>Basketball</h3>
+                <p>Basketball has been a huge aspect of my life since 4th grade. I fell in love
+                    with the game around the time and ever since then I have been playing it and
+                    watching it closely. My favorite team is the Golden State Warriors and my 
+                    favorite player is Stephen Curry.
+                </p>
+            </div>
+            <div class="hobbyContainer">
+                <img src="images/film.png" alt="Movies">
+                <h3>Film</h3>
+                <p>Watching movies has been a growing hobby of mine in recent years. I have 
+                    always loved watching movies but as time has passes on I have enjoyed watching
+                    movies in a more critical way. I enjoy watching movies that really make you think
+                    and pick your brain. some of my favorite movies are Blade Runner 2049, Interstellar,
+                    and Shawshank Redemption. 
+                </p>
+            </div>
+            <div class="hobbyContainer">
+                <img src="images/cooking.png" alt="cooking">
+                <h3>Cooking</h3>
+                <p>Making food has also been another growing hobby of mine. I enjoy the aspect of 
+                    cooking and like to try new recipies. I find it relaxing after a long day but 
+                    I also think it is an incredibly valuable skill as it can save you so much money
+                    from eating out. Some of my favorite foods include: steak, french fries, and buffalo
+                    wings
+                </p>
+            </div>
+            <div class="hobbyContainer">
+                <img src="images/cars.png" alt="truck">
+                <h3>Cars</h3>
+                <p>Watching reviews and looking at cars for sale near me is one of my favorite things
+                    to do. I am no gearhead by anymeans but I enjoy learning about how cars and how to 
+                    fix them. I also like seeing what new cars are capable of and what new technology
+                    they bring. Right now a currently drive a Mustange GT and it was fun for a while
+                    but the older I have gotten I have yearned for something more practicle like a truck.
+                    Some vehicles I currently interested in include: Toyota Tocoma, Subaru WRX, and a 
+                    Nissian Frontier.
+                </p>
+            </div>
+            <div class="hobbyContainer">
+                <img src="images/computers.png" alt="computer">
+                <h3>Computers</h3>
+                <p>As a Computer Science Major it is natural for me to have an intrest in computers.
+                    I like to learn and understand how they work on a deeper level compared to the 
+                    average person and I am consistnly amazed by their complexities. I have also been
+                    recently interested an aquiring a new computer. Some of the ones I am considering
+                    are the Mac mini, iMac, or building my own.
+                </p>
+            </div>
+            <div class="hobbyContainer">
+                <img src="images/videoGames.png" alt="video games">
+                <h3>Video Games</h3>
+                <p>I have been playing video games every since I could remeber. From playing on my
+                    parents old desktop and the PS2 to know playing on the PS5. My favorite thing about
+                    playing video games is not the games it's self but being about to connect with
+                    friends. Althought recently I have not been playing much recently due to other 
+                    life priorities I still enjoy it whenever I do get the chance. Some of my favorite
+                    video games of all time are Black Ops 3, Rainbow Six Siege, and NBA2K. 
+                </p>
+            </div>
+    <!--id for quiz section for javaScript-->
+    <form id = "quiz">
+        <div class="hobbyQuiz">
+            <h2> My Hobby Quiz</h2>
+                <!--Contains all quiz questions-->
+                <div class="questions">
+                    <ul>
+                        <li>
+                            <!--Question being asked-->
+                            <label for="question1">1. What is Connor's favorite basketball player?</label>
+                            <!--Drop down menu with options for questions answer-->
+                            <select name="question1" id="question1">
+                                <!--Defult answer "option disabled"-->
+                                <option value="" disabled selected>Options</option>
+                                <!--The three options of answers-->
+                                <option value="Lebron James">Lebron James</option>
+                                <option value="Stephen Curry">Stephen Curry</option>
+                                <option value="Kevin Durant">Kevin Durant</option>
+                            </select>
+                        </li>
+                        <li>
+                            <label for="question2">2. Which of the following is one of Connor's favorite foods?</label>
+                            <select name="question2" id="question2">
+                                <option value="" disabled selected>Options</option>
+                                <option value="Pizza">Pizza</option>
+                                <option value="Cheese Burgers">Cheese Burgers</option>
+                                <option value="Buffalo Wings">Buffalo Wings</option>
+                            </select>
+                        </li>
+                        <li>
+                            <label for="question3">3. What car is Connor interested in getting?</label>
+                            <select name="question3" id="question3">
+                                <option value="" disabled selected>Options</option>
+                                <option value="Toyota Tocoma">Toyota Tocoma</option>
+                                <option value="F-150">F-150</option>
+                                <option value="Mustang">Mustang</option>
+                            </select>
+                        </li>
+                        <li>
+                            <label for="question4">4. Why does Connor like video games?</label>
+                            <select name="question4" id="question4">
+                                <option value="" disabled selected>Options</option>
+                                <option value="They kill time">They kill time</option>
+                                <option value="He loves story games">He loves story games</option>
+                                <option value="Connecting with friends">Connecting with friends</option>
+                            </select>
+                        </li>
+                    </ul>
+                    <!--submit quiz button-->
+                    <button type="submit">Submit</button>
+                </div>
+            </form>
+            <!--div that dispays quiz results when submitted-->
+            <div id="quizResults"></div>
+        </div>
+    </div>
+    <footer>
+        <p>© 2024 Connor Fitts. All rights reserved.</p>
+    </footer>
+</body>
+</html>

@@ -1,0 +1,141 @@
+/* font and background color of page */
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #ea4c89;
+}
+
+h1 {
+    text-align: center;
+    margin-bottom: 40px;
+    background-color: white;
+    border-radius: 10px;
+    padding: 10px;
+    width: 50%;
+    /* centers h1 */
+    margin-left: auto;
+    margin-right: auto;
+    justify-content: center;
+}
+
+/* sytle for buttons/navigation section */
+button {
+    cursor: pointer;
+    color: black; 
+    background-color: white;
+    border: none; 
+    padding: 10px 15px; 
+    border-radius: 5px;
+    transition: transform 0.3s; 
+    transition: color 0.3s;
+}
+
+/* added sytle and interactivity with navigation */
+button:hover {
+    color: #ea4c89;
+    transition: 0.3s;
+    transform: scale(1.05);
+}
+ 
+/* changes color of the specific navigation that you are currently on */
+.active button {
+    color: #ea4c89;
+
+}
+
+/* moves navigation to proper place and sets background color */
+.navigate {
+    text-align: right;
+    background-color: white;
+    border-radius: 5px;
+}
+
+/* sets the layout of hobbies section */
+.hobbies {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+/* sytles the hobby section */
+.hobbyContainer {
+    background-color: white;
+    border-radius: 10px;
+    padding: 10px;
+    width: 30%;
+    text-align: center;
+}
+
+.hobbyContainer h3 {
+    color: #ea4c89;
+}
+
+.hobbyContainer:hover {
+    transition: 0.3s;
+    transform: scale(1.05);
+}
+
+
+.hobbyContainer img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
+}
+
+.hobbyQuiz {
+    text-align: center;
+    margin-bottom: 40px;
+    background-color: white;
+    border-radius: 10px;
+    padding: 10px;
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    justify-content: center;
+    
+    
+}
+
+.questions {
+    text-align: left;
+    padding-left: 20px;
+    margin-bottom: 20px;
+}
+
+.questions button {
+    display: block;
+    margin: 20px auto;
+    background-color: lightgray;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.questions li {
+    margin-bottom: 15px;
+}
+
+.questions select {
+    cursor: pointer;
+}
+
+#quizResults {
+    text-align: center;
+    margin-top: 20px;
+}
+
+#quizResults h3 {
+    color: #ea4c89;
+}
+
+footer {
+    color: white;
+}
+
+/* adjusts page layout according to screen size */
+@media (max-width: 600px) {
+    .navigate {
+        text-align: center; /* Center text on smaller screens */
+    }
+
+}
